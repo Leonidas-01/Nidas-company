@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architectural Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="http://fonts.gstatic.com">
+    <link href="http://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="body">
+    <section>
+        <div class="side-bar">
+            <img src="images/menu.png" class="menu">
+            <div class="links">
+                <img src="images/fb.png">
+                <img src="images/ig.png">
+                <img src="images/tw.png">
+            </div>
+            <div class="useful-links">
+                <img src="images/share.png">
+                <img src="images/info.png">
+            </div>
+        </div>
+        <div class="net">
+            <h1>If You Dont Have An account<br>please proceed to clicking <br>on "Sign in" in the previous page</h1>
+            <a href="my page.html"><input class="btnn" type="button" value="Previous page"></a>
+        </div>
+        <div class="login-box">
+            <h1>Login</h1>
+            <div class="textbox">
+                <i class="fa fa-user"></i>
+                <input type="text" placeholder="Username">
+            </div>
+            <div class="textbox">
+                <i class="fa fa-lock"></i>
+                <input type="password" placeholder="Password">
+            </div>
+            <input class="btn" type="button" value="Sign in">
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-----JavaScript for Toggle Menu------->
+
+    <script>
+        var navlinks = document.getElementById("navlinks");
+
+        function showmenu() {
+            navlinks.style.right = "0";
+        }
+
+        function hidemenu() {
+            navlinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+
+</html>

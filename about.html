@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architectural Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="http://fonts.gstatic.com">
+    <link href="http://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/My logo.png.png"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hidemenu()" style="color:rgb(247, 240, 240);font-weight:bold">Close</i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="design.html">DESIGN</a></li>
+                    <li><a href="Blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="">PORTFOLIO</a></li>
+                    <li><a href="">NEWS</a></li>
+                </ul>
+            </div>
+
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+
+
+
+    </section>
+    <!------ about us content ----->
+
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>We Are The World Largest Architectural Firm with academy</h1>
+                <p>This company has been created since the year march 23rd, 2021. We have been acknowledge by most of the architectural organizations.<br>We have won many international and local awards which made us world wide known.<br>We basically work
+                    in countries like Nigeria,USA,UK,Egypt,China and Russia.<br>We take our buisness all over the world, so we are available for considerations anywhere.</p>
+                <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+            </div>
+            <div class="about-col">
+                <img src="images/about.png.jpg">
+            </div>
+        </div>
+        <section id="wrapper">
+            <div class="whole-con">
+                <h1>LEADING THE INDUSTRY THROUGH GREAT CHANGE</h1>
+                <h4>We are a constellation of stars invigorated by our incredible diversity and global reach.
+                    <br> Our team of 7,000 talented design professionals, strategists, innovators, and leaders
+                    <br> is driven by a shared purpose to improve how people experience the places we build.
+                </h4>
+            </div>
+        </section>
+        <section>
+            <div class="slot-wrapper">
+                <p>As a company that  is a collective of future-forward thinkers and designers
+                     who are driven to face the critical challenges of our time.
+                     We are dedicated to improving people’s lives, serving our clients and healing the planet.
+                     Together, we cultivate a culture of design excellence at the confluence of art and science,
+                     blending the power of creative expression with a clear sense of purpose.
+                     is a global architecture, design, and planning firm with 53 locations and 7,000 professionals
+                     networked across the Americas, Europe, Greater China, Asia Pacific, and the Middle East.
+                     Founded in 1965, the firm works globally with more than 4,000 clients across more than 29
+                     practice areas spanning the work, lifestyle, community, and health sectors. We are guided by
+                     our mission to create a better world through the power of design and believe the source of our
+                     strength is our people. By leveraging our diversity of ideas, our research and innovation, our 
+                     values, and our One-Firm Firm culture, we are moving forward together into a new era defined by design.
+                     By empowering our people and working seamlessly as an interconnected firm, we’re able to make the greatest
+                     impact for our communities as we continue to tackle the world’s challenges. We continue to sharpen our
+                     climate action focus with fresh research, new design capabilities, and updated priorities to meet our
+                     goal of achieving a net zero carbon portfolio by 2030. Through our Green Materials Initiative, we are
+                     working to reshape the entire building materials supply chain to significantly reduce construction-related
+                     carbon emissions.
+                </p>
+    
+            </div>
+            <h1>OUR CO WORKERS</h1>
+            <div class="role">
+                <div class="role-roll">
+                    <img id="myImg" src="images/DSC_8325.JPG" onclick="toggleModal('myImg1')" alt="CEO">
+                    <!--------- The Modal ------>
+                    <div id="myModal" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="img01">
+                        <div id="caption"></div>
+                    </div>
+                    <div class="text-drop">
+                        <span>CEO OF THE COMPANY</span>
+                        <div class="text-drop-content">
+                        <p>Arc Dr Abdulakeem</p>
+                        </div>
+                    </div>
+                    <p>The manager that head this company
+                       <br>In person of Dr. Arc Adeaga Abdulakeem
+                       <br>The almighty master mind of All this
+                       <br>It has always been an honor working with you sir 
+                    </p>
+                </div>
+                <div class="role-roll">
+                    <img id="myImg" src="images/DSC_8323.JPG" onclick="toggleModal('myImg2')" alt="Manager">
+                    <!--------- The Modal ------>
+                    <div id="myModal" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="img01">
+                        <div id="caption"></div>
+                    </div>
+                    <div class="text-drop">
+                        <span>MANAGER</span>
+                        <div class="text-drop-content">
+                        <p>Arc Afolabi</p>
+                        </div>
+                    </div>
+                    <p>The manager that head this company
+                       <br>In person of Dr. Arc Adeaga Abdulakeem
+                       <br>The almighty master mind of All this
+                       <br>It has always been an honor working with you sir 
+                    </p>
+                </div>
+                <div class="role-roll">
+                    <img id="myImg" src="images/DSC_8319.JPG" onclick="toggleModal('myImg3')" alt="ASSISTANT MANAGER">
+                    <!--------- The Modal ------>
+                    <div id="myModal" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="img01">
+                        <div id="caption"></div>
+                    </div>
+                    <div class="text-drop">
+                        <span>ASSISTANT MANAGER</span>
+                        <div class="text-drop-content">
+                        <p>Arc Olawale</p>
+                        </div>
+                    </div>
+                    <p>The manager that head this company
+                       <br>In person of Dr. Arc Adeaga Abdulakeem
+                       <br>The almighty master mind of All this
+                       <br>It has always been an honor working with you sir 
+                    </p>
+                </div>
+            </div>
+            
+            
+            <script>
+                const toggleModal=(id)=>{
+                    console.log(id)
+                }
+                // javacript for the image enlargement
+                // Get the modal
+                var modal = document.getElementById('myModal');
+                
+                // Get the image and insert it inside the modal - use its "alt" text as a caption
+                var img = document.getElementById('myImg');
+                var modalImg = document.getElementById("img01");
+                var captionText = document.getElementById("caption");
+                img.onclick = function(){
+                  modal.style.display = "block";
+                  modalImg.src = this.src;
+                  captionText.innerHTML = this.alt;
+                }
+                
+                // Get the <span> element that closes the modal
+                var span = document.getElementsByClassName("close")[0];
+                
+                // user clicks on <span> (x), close the modal
+                span.onclick = function() { 
+                  modal.style.display = "none";
+                }
+            </script>
+        </section>
+        
+    </section>
+    <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a href="index.html">1</a>
+        <a href="about.html" class="active">2</a>
+        <a href="design.html">3</a>
+        <a href="Blog.html">4</a>
+        <a href="contact.html">5</a>
+        <a href="#">6</a>
+        <a href="#">&raquo;</a>
+    </div>
+
+
+    <!-------- footer ------->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>We Make Design Of Different Type And Also Educate People On Architecture</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made <i class="fa fa-heart-o"></i> by Easy Designs</p>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-----JavaScript for Toggle Menu------->
+
+    <script>
+        var navlinks = document.getElementById("navlinks");
+
+        function showmenu() {
+            navlinks.style.right = "0";
+        }
+
+        function hidemenu() {
+            navlinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+
+</html>

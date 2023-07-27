@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIDAS DESIGN</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="http://fonts.gstatic.com">
+    <link href="http://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <a href="" class="brand">NIDAS DESIGN</a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Services</a>
+                <a href="">Gallery</a>
+                <a href="">Contact Us</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="home">
+        <video class="video-slide active" src="pexels-ricky-esquivel-1826896-1920x1080-24fps.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="2.mp4.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="3.mp4.mp4" autoplay muted loop></video>
+        <div class="content active">
+            <h1>VIEW OUR BEAUTIFUL DESIGNS<br><span>Gallery</span></h1>
+            <p>Our designs are considered to be one
+                
+                
+                of the best designs being produced world wide<br>Different designs of your choice are available at low prices you can afford</p>
+            <a href="">Know More</a>
+        </div>
+        <div class="content">
+            <h1>WONDERFUL COMPANIES<br><span>Gallery</span></h1>
+            <p>Our designs are considered to be one of the best designs being produced world wide<br>Different designs of your choice are available at low prices you can afford</p>
+            <a href="">Know More</a>
+        </div>
+        <div class="content">
+            <h1>NIDAS LTD BEST<br><span>Gallery</span></h1>
+            <p>Our designs are considered to be one of the best designs being produced world wide<br>Different designs of your choice are available at low prices you can afford</p>
+            <a href="">Know More</a>
+        </div>
+        <div class="media-icons">
+            <a href=""><i class="fa fa-facebook"></i></a>
+            <a href=""><i class="fa fa-instagram"></i></a>
+            <a href=""><i class="fa fa-twitter"></i></a>
+            <a href=""><i class="fa fa-linkedin"></i></a>
+            <a href=""><i class="fa fa-searchengin"></i></a>
+        </div>
+        <div class="slider-navigation">
+            <div class="nav-btn active"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        //javacript of responsive navigation menu
+        const menuBtn = document.querySelector(".menu-btn");
+        const navigation = document.querySelector(".navigation");
+        menuBtn.addEventListener("click", () => {
+        menuBtn.classList.toggle("active");
+        navigation.classList.toggle("active");
+
+        })
+
+        //javascript for video slider navigation
+        const btns = document.querySelectorAll(".nav-btn");
+        const slides = document.querySelectorAll(".video-slide");
+        const contents = document.querySelectorAll(".content");
+        var slidernav = function(manual){
+            btns.forEach((btn) => {
+                btn.classList.remove("active")
+            })
+
+            slides.forEach((slide) => {
+                slide.classList.remove("active")
+            })
+            contents.forEach((content) => {
+                content.classList.remove("active")
+            })
+            btns[manual].classList.add("active");
+            slides[manual].classList.add("active");
+            contents[manual].classList.add("active");
+        }
+
+        btns.forEach((btn, i) => {
+            btn.addEventListener("click", () => {
+                slidernav(i);
+            });
+        });
+    </script>
+
+    <!----------- description ---------->
+    <section class="description">
+        <h1>Designs We Offer</h1>
+        <p>We provide you with well qualified designs to suite and enhance your living.<br>We Offer Modern designs,
+            Post-modern designs, Neofuturist design, Neoclassical designs, Baroque designs,<br>Gothic designs, Classical
+            designs, Greek Revival design, Multi residential, Addition and alteration, Contemporary Architecture,
+            Industrial designs, Bauhaus designs, Victorian designs.</p>
+
+        <div class="row">
+            <div class="description-col">
+                <h3>HOW WE WORK</h3>
+                <p>Our consideration is typically duely favoured by many
+                    <br>due to the way we create our design in a rare quality way
+                    <br>which we bring our all the feelings of a pleasured creativity.
+                    <br>There are many of our designs you can explore and you will enjoy the fact of working along side with us
+                    <br>Our company provides many services which you can explore from.</p>
+            </div>
+            <div class="description-col">
+                <h3>THINGS WE DO</h3>
+                <p>Our consideration is typically duely favoured by many,
+                    <br>due to the way we create our design in a rare quality way,
+                    <br>which we bring out all the feelings of a pleasured creativity.
+                    <br>There are many of our designs you can explore and you will enjoy the fact of working along side with us
+                    <br>Our company provides many services which you can explore from.</p>
+            </div>
+            <div class="description-col">
+                <h3>WHY YOU SHOULD CHOOSE US</h3>
+                <p>We are honoured by your consideration which will be the best for your want.
+                    <br>We are assuring a beautiful conceptual design for you in any form you would love,
+                    <br>Our preparation on planning applications done by our workers are standout of all,
+                    <br>We are considered the best in our creation of detailed construction drawings of any kind,
+                    <br>Project management while the build is on site is not left out of the services we will render to you.</p>
+            </div>
+        </div>
+        <div class="description-col2">
+            <h3>OUR MAINTAINANCE</h3>
+            <p>Constructing buildings and managing them can be one of the difficult thing to carry out due to some instances that can demoralize the enthusiasm of keep it up
+                <br>we can assure you that we will provide all nessesary maintainace services needed for making your building standout in the society. 
+                <br>Our company provides Routine services, preventive maintainace, corrective maintainance, HVAC services.</p>
+        </div>
+    </section>
+
+    <section class="explore">
+        <h1>OUR FEATURED DESIGN</h1>
+            <P>With our Architectural visualization to VFX,
+                <br>Our softwares and skills can bring your projects to life,
+                <br>Getting up with this idea, we are happy to assure you of
+                <br>a great and solid partnership with our company.</P>
+                <div class="row">
+                    <div class="explore-col">
+                        <img src="images.jpeg">
+                        <h2>CONTEMPORARY ARCHITECTURE</h2>
+                        <P>This can be catigorized as sculpture on a large scale,
+                            <br>It can also be describe as a present-day building design
+                            <br>Contemporary Architectural by Nidas design Architects is completed
+                            <br>with nuances of metal and glass, sometimes encompassing the whole
+                            <br>design and building, resulting in a wonderful masterpiece that leaves
+                            <br>its owners and people viewing it, in awe. Have a look at our portfolio
+                            <br>below, and view some of our contemporary architectural project in more details.</P>
+                            <a href="" class="hero-move">Check It Out</a>
+                    </div>
+                    <div class="explore-col">
+                        <a href="https://www.bing.com/ck/a?!&&p=e58539f9d5258a78JmltdHM9MTY4NTkyMzIwMCZpZ3VpZD0yODNkNThhOC00MDBkLTY4N2UtMTkwMS00YTlmNDExMDY5MTMmaW5zaWQ9NTE5OQ&ptn=3&hsh=3&fclid=283d58a8-400d-687e-1901-4a9f41106913&psq=meaning+of+interior+design+on+wikipedia&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvSW50ZXJpb3JfZGVzaWdu&ntb=1" target="_blank">
+                            <img src="images (4).jpeg">
+                        </a>
+                        <h2>INTERIOR ARCHITECTURE</h2>
+                        <P>We give the art and science of enhancing the interior of a building,
+                            <br>to achieve a healthier and more aesthetically pleasing environment,
+                            <br>for the people using the space. Our designers plans, research,
+                            <br>coordinates, and manages such enhancement projects. We assure
+                            <br>our workers gives the understanding behaviours to help all our 
+                            <br>property owners create a functional room within a building, including
+                            <br>the shapes of a room's walls, floors and more. YOUR VISION OUR EXPERTISE</P>
+                            <a href="" class="hero-move">Check It Out</a>
+                    </div>
+                </div>
+    </section>
+
+    <section>
+        <div class="text">
+            <h1>SOME OF OUR AWESOME FEAUTURED DESIGNS</h1>
+        </div>
+        <div class="main">
+            <figure>
+                <div class="slider">
+                    <img src="adegoke13.jpg" alt="">
+                </div>
+                <div class="slider">
+                    <img src="images (3).jpeg" alt="">
+                </div>
+                <div class="slider">
+                    <img src="slider img.jpeg" alt="">
+                </div>
+                <div class="slider">
+                    <img src="slider img3.jpg" alt="">
+                </div>
+                <div class="slider">
+                    <img src="slider img6.jpeg" alt="">
+                </div>
+            </figure>
+        </div>
+        <div class="search">Search the table</div>
+        <table>
+            <thead>
+            <tr> <!------- Row 1 --------->
+                <th scope="col" colspan="2">Apartment Type</th>
+                <th scope="col">Price</th>
+                <th scope="col">Location</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr><!-------- Row 2 --------->
+                <td colspan="2">Interior Three Bedroom Flat</td>
+                <td>50 Million Naira</td>
+                <td>Lagos State, Nigeria</td>
+            </tr>
+            <tr><!-------- Row 3 --------->
+                <td colspan="2">Four Bedroom Duplex</td>
+                <td>120 Million Naira</td>
+                <td>Lagos State, Nigeria</td>
+            </tr>
+            <tr><!-------- Row 4 --------->
+                <td colspan="2">Two Bedroom Apartment</td>
+                <td>35 Million Naira</td>
+                <td>Oyo State, Nigeria</td>
+            </tr>
+            <tr><!-------- Row 5 --------->
+                <td colspan="2">Three Storey Building</td>
+                <td>300 Million Naira</td>
+                <td>Kwara State, Nigeria</td>
+            </tr>
+            </tbody>
+            <tfoot>
+            <tr><!-------- Row 6 --------->
+                <td colspan="2">Three Bedroom Duplex</td>
+                <td>90 Million Naira</td>
+                <td>Osun State, Nigeria</td>
+            </tr>
+            </tfoot>
+        </table>
+        <div class="comment-box">
+            <h3>Leave a Comment</h3>
+            <form action="form handler.php" method="post" class="comment-form">
+                <input type="text" name="name" placeholder="Enter Name">
+                <input type="email" name="email" placeholder="Enter Email">
+                <textarea rows="5" name="message" placeholder="Your comment"></textarea>
+                <button type="Submit" class="hero-btn red-btn">POST COMMENT</button>
+            </form>
+        </div>
+        <div class="extral-port">
+            <h3>Select In Multiples, depending on your type:</h3><br>
+            <span>What toppings would you like to be added?</span>
+            <br><br>
+            <input id="lettuce" name="topping" type="checkbox" value="lettuce">
+            <label for="lettuce">Extral 3D Rendering</label><br><br>
+            <input id="tomato" type="checkbox" name="topping" value="tomato">
+            <label for="tomato">Extral 2D Working Drawings</label><br><br>
+            <input id="tomato" type="checkbox" name="topping" value="tomato">
+            <label for="tomato">Additional Working Drawing Script</label><br><br>
+            <input id="tomato" type="checkbox" name="topping" value="tomato">
+            <label for="tomato">Site Supervision Till The End Of The Project</label>
+        </div>
+        
+    </section>
+
+</body>
+</html>
